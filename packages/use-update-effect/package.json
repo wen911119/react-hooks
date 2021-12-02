@@ -1,0 +1,45 @@
+{
+  "name": "@ruiyun/use-update-effect",
+  "version": "1.0.0",
+  "description": "ahook的useUpdateEffect很常用，这是它的独立版,保证在没有tree-shaking的情况下也是最小打包",
+  "keywords": [
+    "hook",
+    "react",
+    "ahooks",
+    "useUpdateEffect"
+  ],
+  "author": "wen911119@163.com",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/use-update-effect.cjs",
+  "source": "src/index.ts",
+  "exports": "./lib/use-update-effect.modern.js",
+  "module": "./lib/use-update-effect.module.js",
+  "unpkg": "./lib/use-update-effect.umd.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.5",
+    "microbundle": "^0.14.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "typings": "./lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}
